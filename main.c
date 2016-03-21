@@ -190,12 +190,12 @@ int getOperatorID(char operator_)
     return -1;
 }
 
-unsigned int isAnOperator(char c)
+bool isAnOperator(char c)
 {
     return (c == '*' || c == '-' || c == '/' || c == '+' || c == '^');
 }
 
-unsigned int isFloat(char c)
+bool isFloat(char c)
 {
     return (isdigit(c) || c == '.');
 }
